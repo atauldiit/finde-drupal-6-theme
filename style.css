@@ -1,0 +1,657 @@
+@import url("reset.css");
+
+
+body {	
+	text-align:left;
+	color: #474747;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+.messages, .nursing-register-title-text{	background-color: #F6EA98;	padding: 5px 20px;}
+#wrapper_body
+{
+	background: #e7e7e7 url(images/body_bg.jpg) repeat-x left top;
+	width:100%;
+	height:auto;
+}
+
+
+.clear {clear: both;}	
+
+a:link, a:visited, a:active {
+	color: #144e91;
+	text-decoration: none;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: medium;	
+}
+
+
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+blockquote {
+	padding: 10px;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	color: #18b3e3;
+	padding-bottom: 5px;
+}
+
+
+
+h1 {
+	font-size: 26px;
+}
+
+
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+
+
+
+h3 {
+	font-size: 16px;
+}
+
+
+
+h4 {
+	font-size: 15px;
+}
+
+
+
+h5 {
+	font-size: 14px;
+}
+
+
+
+h6 {
+	font-size: 13px;
+}
+
+
+
+p {
+	padding-bottom: 10px;
+}
+
+#wrapperMain {
+	width:1000px;
+	margin:0 auto;
+}
+
+#header
+{
+	width:1000px;
+	float:left;
+	position:relative;
+	height:115px;
+}
+
+#header .logo
+{
+	float:left;
+	position:relative;
+	padding:10px 0 0 10px;
+	height:105px;
+}
+
+#banner
+{
+	width:1000px;
+	height:321px;
+	float:left;
+	position:relative;
+}
+
+#banner .banner_left
+{
+	width:500px;
+	height:25px;
+	float:left;
+	position:relative;
+	color:#17b3e3;
+	font-size:13px;
+	height:321px;
+}
+
+#banner .banner_left .banner_menu
+{
+	width:500px;
+	height:25px;
+	float:left;
+	position:relative;
+	color:#17b3e3;
+	font-size:13px;
+}
+
+#banner .banner_menu ul
+{
+	height:25px;
+	float:left;
+	position:relative;
+	padding:10px 0 0 15px;
+}
+
+#banner .banner_menu ul li
+{
+	height:25px;
+	float:left;
+	position:relative;
+	font-weight:bold;
+}
+
+#banner .banner_menu ul li a
+{
+	height:25px;
+	float:left;
+	position:relative;
+	color:#17b3e3;
+	font-size:13px;
+	text-decoration:none;
+}
+
+#banner .banner_left .banner_text
+{
+	width:465px;
+	float:left;
+	position:relative;
+	padding:90px 0 0 35px;
+}
+
+#banner .banner_image
+{
+	width:500px;
+	background:url(images/banner_right.jpg) no-repeat left top;
+	height:321px;
+	float:left;
+	position:relative;
+}
+
+
+#menu {
+	width:1000px;
+	float:left;
+	position:relative;
+	height: 45px;
+}
+
+#menu ul {
+	float:left;
+}
+
+#menu ul li {
+	height: 45px;
+	line-height: 45px;
+	float: left;	
+	display: block;
+	padding:0;
+}
+
+#menu ul li a:link,
+#menu ul li a:active,
+#menu ul li a:visited {
+	color: #17b3e3;
+	font-size: 12px;
+	font-weight: bold;
+	height: 45px;
+	line-height: 45px;
+	float: left;	
+	display: block;	
+	padding: 0 9px 0 9px;
+	cursor: pointer;
+}
+
+#menu ul li.active a:link,
+#menu ul li.active a:active,
+#menu ul li.active a:visited,
+#menu ul li a:hover {
+	background:url(images/menu_li_bg.png) repeat-x left top;
+	color: #ffffff;	
+	text-decoration: none;
+}
+
+#container_wrapper
+{
+	width:1000px;
+	float:left;
+	position:relative;
+	padding:20px 0 0 0;
+}
+
+#container_wrapper .container_left{
+/*	width:490px;*/
+	float:left;
+	position:relative;
+	padding-right:10px;
+}#contentCol{	width:490px;}
+
+#modulelist {
+	background: url(images/modulelist_bg.png) no-repeat left top;
+	width:490px;
+	float:left;
+	position:relative;
+	border-top:#d6d6d6 1px solid;
+	margin-top:20px;
+	padding: 40px 0 20px 0;
+}
+
+#modulelist .moduletable {
+	float: left;
+	width:489px;
+}
+
+#block-nursing_management-0 h2, #modulelist .moduletable h3 {
+	color: #a55095;
+	font-size: 22px;
+}
+
+
+#modulelist .moduletable .inputWrap {
+	width: 200px;
+	float: left;
+}
+
+#modulelist .moduletable .inputWrap h4 {
+	color: #171717;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#modulelist .moduletable .inputWrap a.arrow:link,
+#modulelist .moduletable .inputWrap a.arrow:active,
+#modulelist .moduletable .inputWrap a.arrow:visited {
+	color: #a55095;
+	text-decoration: underline;
+	background: url(images/arrow.jpg) no-repeat right 6px;
+	padding-right: 10px;
+	margin-top:30px;
+	display: block;
+	width: 100px;
+
+}
+
+#modulelist .moduletable .inputWrap a.arrow:hover {
+	text-decoration: none;
+}
+
+#container_wrapper .container_right
+{
+	width:499px;
+	float:right;
+	position:relative;
+	border-left: #d6d6d6 1px solid;
+}
+
+#footerWrap {
+	background: #144e91 url(images/footerWrap.jpg) repeat-x left top;
+	height: 55px;
+	position:relative;
+	margin-top:20px;
+}
+
+#footer {
+	width: 930px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 12px;
+	color: #dedede;	
+	padding: 25px 35px 0 35px;
+}
+
+#footer .moduletable-copy {
+	width: 400px;
+	float: left;
+}
+
+#footer .moduletable-fnav {
+	float: right;
+	width: 300px;
+}
+
+#footer .moduletable-fnav ul li {
+	float: left;
+	background: url(images/fnav_li.jpg) no-repeat left 6px;
+	list-style:none;
+}
+
+#footer .moduletable-fnav ul li:first-child {
+	background: none;
+	list-style:none;
+}
+
+#footer .moduletable-fnav ul li a:link,
+#footer .moduletable-fnav ul li a:active,
+#footer .moduletable-fnav ul li a:visited {
+	padding: 0 10px;
+	color: #f1f1f1;
+	font-size: 11px;
+}
+
+#footer .moduletable-fnav ul li a:hover {
+	text-decoration: underline;
+}
+
+/******* FORM *******/
+#user-register, #user-login{
+	padding: 0 10px 10px;
+}
+#user-register label, #user-login label{
+	display: block;
+	color: #797979;
+	font-weight: 700;
+	line-height: 1.4em;
+}
+#user-register input, #user-login input, #user-pass input{
+	width: 220px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #cecece;
+}
+
+#edit-terms-of-use
+{
+	width:13px;
+	height:13px;
+	float:left;
+}
+
+#user-register select, #user-login select{
+	width: 235px;
+	padding: 6px;
+	color: #949494;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #cecece;
+}
+
+#user-register input.error, #user-login input.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+#user-register textarea, #user-login textara{
+	width: 550px;
+	height: 80px;
+	padding: 6px;
+	color: #adaeae;
+	font-family: Arial,  Verdana, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 12px;
+	border: 1px solid #cecece;
+}
+#user-register textarea.error, #user-login textarea.error{
+	background: #f8dbdb;
+	border-color: #e77776;
+}
+#user-register div, #user-login div{
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+#user-register div span, #user-login div span{
+	margin-left: 10px;
+	color: #b1b1b1;
+	font-size: 11px;
+	font-style: italic;
+}
+#user-register div span.error, #user-login div span.error{
+	color: #e46c6e;
+}
+#user-register #send, #user-login #send{
+	background: #6f9ff1;
+	color: #fff;
+	font-weight: 700;
+	font-style: normal;
+	border: 0;
+	cursor: pointer;
+	margin-top:20px;
+	width:100px;
+}
+#user-register #send:hover{
+	background: #79a7f1;
+}
+#error{
+	margin-bottom: 20px;
+	border: 1px solid #efefef;
+}
+#error ul{
+	list-style: square;
+	padding: 5px;
+	font-size: 11px;
+}
+#error ul li{
+	list-style-position: inside;
+	line-height: 1.6em;
+}
+#error ul li strong{
+	color: #e46c6d;
+}
+#error.valid ul li strong{
+	color: #93d72e;
+}
+
+.clearfix #tx-srfeuserregister-pi1-tx_nxsrfeusererweiterung_agb
+{
+    float: left;
+    width: 20px;
+}
+
+.node .content-left{
+	float:left;
+	margin:0;
+	padding:10px 28px 28px 0;
+	width:544px;
+}
+.node .content-left .sub-title{
+	color:#BC63AB;
+	font-size:15px;
+	font-weight:normal;
+	margin:10px 0 5px;
+	padding:0;
+}
+.node .content-left .company-details{
+	border-bottom:1px solid #CCCCCC;
+	padding-bottom:10px;
+	margin-bottom: 10px;
+}
+.node .title-heading{
+	color:#BC63AB;
+	font-size:12px;
+	font-weight:normal;
+	line-height:25px;
+	margin:5px 0 0;
+	padding:0;
+}
+.node .content-left .image-block {position:relative; width:544px; margin:10px 0 10px 0;}
+
+.node .content-left .image-block #large-image{
+	float: left;
+	height:300px;
+	width:400px;
+}
+.node .content-left .image-block .thumbs{
+	width: 100px;
+	margin-left:10px;
+	float: left;
+}
+
+.gallery em img
+{
+
+}
+
+.node .content-left .image-block .thumbs a.gallery {display:block; display:inline-block; border:1px solid #333333; margin: 0 0 4px 0; z-index:50;}
+
+.node .content-left .image-block .thumbs a:link
+{
+	margin:0;
+	padding:0;
+}
+
+.node .content-left .image-block #large-image .start{width:400px; height:300px; top:0px; left: 0px; border:1px solid #333333;}
+
+.node .content-left .image-block a.gallery em {display:none;}
+.node .content-left .image-block a.gallery:hover {border:1px solid #ffffff;}
+.node .content-left .image-block a.gallery:hover em {
+	display:block;
+	position:absolute; 
+	width:400px; 
+	height:300px; 
+	top:25px; 
+	left:0; 
+	border:1px solid #333333; 
+	z-index:50;
+}
+.node .content-left #service-list{
+	margin:5px 0 0;
+	padding:0;
+}
+.node .content-left #service-list li{
+	float: left;
+	width: 270px;
+}
+.node .content-left #service-list li div.selected{
+	background:url("images/ja.gif") no-repeat scroll left top transparent;
+	line-height:20px;
+	color:#18B3E3;
+	margin:0;
+	padding:0 0 0 20px;
+}
+.node .content-left #service-list li div.unselected{
+	background:url("images/nein.gif") no-repeat scroll left top transparent;
+	color:#999999;
+	line-height:20px;
+	margin:0;
+	padding:0 0 0 20px;
+}
+.node .content-right{
+	float:left;
+	margin:0;
+	padding:10px 10px 28px 0;
+	width:350px;
+}
+/************************************** Registration Page **********************************************/
+#nursing-register-form-block
+{
+	padding-bottom:20px;
+}
+
+#nursing-register-form input{
+    border: 1px solid #CECECE;
+    color: #949494;
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 11px;
+    padding: 6px;
+    width: 220px;
+}
+
+#nursing-register-form label, #nursing-register-form .form-item label {
+    color: #797979;
+    display: block;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+#nursing-register-form .form-checkboxes input
+{
+	width:20px;
+}
+
+/************************************** Search Page **********************************************/
+
+#edit-city-or-zip-wrapper
+{
+	width:180px;	
+}
+
+
+#edit-distance-wrapper
+{
+	width:200px;
+}
+
+#block-nursing_management-0 {
+	background: url(images/modulelist_bg.png) no-repeat left top;
+	width:490px;
+	float:left;
+	position:relative;
+	border-top:#d6d6d6 1px solid;
+	margin-top:20px;
+	padding: 40px 0 20px 0;
+}
+
+#nurse-search-form .inputbox {
+	border: 1px solid #bdbcbd;
+	width: 170px;
+	padding: 2px 0;
+	margin-bottom:24px;
+}
+
+#nurse-search-form #edit-submit
+{
+	background: url(images/submit-2.png) no-repeat left top;
+	width:165px;
+	height:25px;
+	border:none;
+	text-indent:1000px;
+	float:left;
+	cursor:pointer;
+}
+
+#edit-city-or-zip {
+	border: 1px solid #bdbcbd;
+	width: 170px;
+	padding: 2px 0;
+	margin-bottom:24px;
+}
+
+#user-pass #edit-submit
+{
+	float:left;
+	margin-top:25px;
+	cursor:pointer;
+}
+
+#user-login #edit-submit, .nursing-register-form-item #edit-submit
+{
+	cursor:pointer;
+}
+
+#nurse-search-form-block
+{
+}
+
+#user-search-form-box
+{
+}#tellform {	border:1px solid #CCCCCC;	margin:40px 0 20px;	padding:20px;	width:280px;}.fld_tell {	margin:0 0 10px;	padding:0;	width:238px;}#tellform .messages{display: none;}
+
+
+.wishlist
+{
+	float:right;	font-weight:bold;	padding-top:90px;	text-align:right;	width:260px;
+}
+
+.wishlist a
+{
+	text-decoration:none;
+}
+
+.wishlist a:hover
+{
+	color:#A55095;
+}.loading{	background: url("images/loading.gif") no-repeat;	width: 13px;	height: 13px;	display: none;	margin:3px 2px 0 0;	float:left;}
